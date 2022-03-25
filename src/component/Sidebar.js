@@ -8,9 +8,9 @@ const Sidebar = () => {
  
 
   return (
-    <aside className={isSidebar ? 'sidebar-wrapper show' : 'sidebar-wraper'}>
+    <aside className={`${isSidebar ? 'sidebar-wrapper show' : 'sidebar-wraper'}`}>
      <div className="sidebar">
-      <button className="close-btn" onClick={closeSidebar} typebutton>
+      <button type="button" className="close-btn" onClick={closeSidebar} typebutton>
         <FaTimes />
       </button>
       <div className="sidebar-links">
